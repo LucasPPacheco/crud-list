@@ -1,0 +1,22 @@
+<div class="container">
+    <div>
+        <h1>Atualizar Usuário</h1>
+    </div>
+    <div *ngIf="request">
+        <div  class="input-group input-group-sm mb-3">
+            <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-sm" >Nome</span>
+            </div>
+            <input type="text" aria-describedby="inputGroup-sizing-sm" >
+        </div>
+      <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroup-sizing-sm">Profissão</span>
+        </div>
+        <input type="text"  aria-describedby="inputGroup-sizing-sm">
+      </div>
+      <div>
+          <button (click)="atualizar()" type="button" class="btn btn-primary">Cadastrar</button>
+      </div>
+    </div>
+</div>
